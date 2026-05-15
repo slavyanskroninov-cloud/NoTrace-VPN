@@ -21,7 +21,6 @@
             overflow-x: hidden;
         }
 
-        /* Контейнер */
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -54,7 +53,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
 
         .logo-icon i {
@@ -62,7 +60,7 @@
             font-size: 22px;
         }
 
-        /* Герой секция */
+        /* Герой */
         .hero {
             display: flex;
             align-items: center;
@@ -80,7 +78,6 @@
         .badge {
             display: inline-block;
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(4px);
             padding: 6px 16px;
             border-radius: 40px;
             font-size: 14px;
@@ -98,13 +95,7 @@
             margin-bottom: 24px;
         }
 
-        .hero-description {
-            font-size: 18px;
-            color: #a0a0a0;
-            margin-bottom: 32px;
-        }
-
-        /* Telegram Bot Card — главный блок */
+        /* Telegram Bot Card */
         .telegram-bot-card {
             background: #0a0a0a;
             border: 1px solid #1a1a1a;
@@ -124,7 +115,6 @@
             font-size: 48px;
             font-weight: 800;
             margin-bottom: 16px;
-            letter-spacing: -1px;
         }
 
         .telegram-bot-card p {
@@ -149,161 +139,15 @@
             font-family: inherit;
         }
 
-        .bot-username i {
-            font-size: 28px;
-            color: #000000;
-        }
-
         .bot-username:hover {
             transform: scale(1.02);
             background: #e0e0e0;
         }
 
-        /* Раздел возможностей */
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 60px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 60px 0;
-        }
-
-        .feature-card {
-            background: #0a0a0a;
-            border: 1px solid #1a1a1a;
-            border-radius: 28px;
-            padding: 32px 24px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-4px);
-            border-color: #333333;
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-
-        .feature-card h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-
-        .feature-card p {
-            color: #888888;
-            line-height: 1.5;
-            font-size: 15px;
-        }
-
-        /* Тарифы */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 60px 0;
-        }
-
-        .pricing-card {
-            background: #0a0a0a;
-            border-radius: 32px;
-            padding: 32px;
-            transition: 0.3s;
-            border: 1px solid #1a1a1a;
-            position: relative;
-            text-align: center;
-        }
-
-        .pricing-card.popular {
-            border: 1px solid #ffffff;
-            background: #0d0d0d;
-            transform: scale(1.02);
-        }
-
-        .popular-badge {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #ffffff;
-            color: #000000;
-            padding: 4px 16px;
-            border-radius: 40px;
-            font-size: 12px;
-            font-weight: 700;
-        }
-
-        .price {
-            font-size: 42px;
-            font-weight: 800;
-            margin: 20px 0;
-        }
-
-        .price span {
-            font-size: 16px;
-            font-weight: 400;
-            color: #666666;
-        }
-
-        .save-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            color: #cccccc;
-            margin-top: 8px;
-        }
-
-        .features-list {
-            list-style: none;
-            margin: 24px 0;
-            text-align: left;
-        }
-
-        .features-list li {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #aaaaaa;
-        }
-
-        .features-list i.fa-check {
-            color: #ffffff;
-        }
-
-        .features-list i.fa-times {
-            color: #444444;
-        }
-
-        .payment-info {
-            margin-top: 20px;
-            padding-top: 16px;
-            border-top: 1px solid #1a1a1a;
-            font-size: 13px;
-            color: #666666;
-        }
-
-        .payment-info i {
-            color: #ffffff;
-            margin-right: 6px;
-        }
-
-        /* Блоки приложений */
+        /* Приложения */
         .apps-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             margin: 60px 0;
         }
@@ -317,7 +161,7 @@
         }
 
         .app-card h3 {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 12px;
         }
 
@@ -329,8 +173,9 @@
         .store-buttons {
             display: flex;
             justify-content: center;
-            gap: 16px;
+            gap: 12px;
             flex-wrap: wrap;
+            margin-bottom: 16px;
         }
 
         .store-btn {
@@ -365,7 +210,169 @@
             color: #888888;
         }
 
-        /* Блок поддержки */
+        .windows-btn {
+            border-color: #0078d4;
+        }
+
+        .windows-btn i {
+            color: #0078d4;
+        }
+
+        .windows-btn:hover {
+            background: #0078d4;
+            border-color: #0078d4;
+        }
+
+        .windows-btn:hover i {
+            color: white;
+        }
+
+        .divider {
+            margin: 16px 0;
+            font-size: 12px;
+            color: #444;
+            position: relative;
+        }
+
+        /* Возможности */
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .feature-card {
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-radius: 28px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: #333;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: #888888;
+            font-size: 15px;
+        }
+
+        /* Тарифы */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .pricing-card {
+            background: #0a0a0a;
+            border-radius: 32px;
+            padding: 32px;
+            border: 1px solid #1a1a1a;
+            text-align: center;
+            position: relative;
+        }
+
+        .pricing-card.popular {
+            border: 1px solid #ffffff;
+            background: #0d0d0d;
+            transform: scale(1.02);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ffffff;
+            color: #000000;
+            padding: 4px 16px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 16px;
+            font-weight: 400;
+            color: #666;
+        }
+
+        .save-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 8px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 24px 0;
+            text-align: left;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #aaa;
+        }
+
+        .features-list i.fa-check {
+            color: #ffffff;
+        }
+
+        .features-list i.fa-times {
+            color: #444;
+        }
+
+        .payment-info {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #1a1a1a;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .payment-info i {
+            color: #fff;
+            margin-right: 6px;
+        }
+
+        /* Поддержка */
         .support-block {
             background: #0a0a0a;
             border: 1px solid #1a1a1a;
@@ -406,11 +413,7 @@
             color: #000000;
         }
 
-        .support-button:hover i {
-            color: #000000;
-        }
-
-        /* CTA секция */
+        /* CTA */
         .cta-section {
             border-top: 1px solid #1a1a1a;
             border-bottom: 1px solid #1a1a1a;
@@ -425,7 +428,7 @@
         }
 
         .cta-section p {
-            color: #888888;
+            color: #888;
         }
 
         /* Footer */
@@ -433,7 +436,7 @@
             border-top: 1px solid #1a1a1a;
             padding: 40px 0;
             text-align: center;
-            color: #666666;
+            color: #666;
         }
 
         @media (max-width: 768px) {
@@ -450,9 +453,6 @@
                 font-size: 18px;
                 padding: 12px 24px;
             }
-            .section-title {
-                font-size: 28px;
-            }
         }
 
         button {
@@ -462,7 +462,6 @@
 </head>
 <body>
 <div class="container">
-    <!-- Навигация -->
     <nav class="navbar">
         <div class="logo">
             <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
@@ -470,7 +469,6 @@
         </div>
     </nav>
 
-    <!-- Герой секция -->
     <div class="hero">
         <div class="hero-content">
             <div class="badge"><i class="fas fa-eye-slash"></i> 100% анонимность</div>
@@ -478,211 +476,107 @@
         </div>
     </div>
 
-    <!-- Главный блок с Telegram ботом -->
+    <!-- Telegram Bot -->
     <div class="telegram-bot-card">
-        <div class="bot-icon">
-            <i class="fab fa-telegram-plane"></i>
-        </div>
+        <div class="bot-icon"><i class="fab fa-telegram-plane"></i></div>
         <h2>NoTraceVPN</h2>
         <p>Быстрый, безопасный и 100% анонимный VPN в твоем Телеграм</p>
-        <button class="bot-username" id="botBtn">
-            <i class="fab fa-telegram"></i> @NoTraceVPN_bot
-        </button>
+        <button class="bot-username" id="botBtn"><i class="fab fa-telegram"></i> @NoTraceVPN_bot</button>
     </div>
 
-    <!-- Приложения для скачивания -->
+    <!-- Приложения с Windows-кнопками -->
     <div class="apps-section">
+        <!-- Happ -->
         <div class="app-card">
             <h3>📱 Happ</h3>
             <p>Быстрый, безопасный и простой в использовании</p>
             <div class="store-buttons">
-                <button class="store-btn" id="happGooglePlayBtn">
-                    <i class="fab fa-google-play"></i>
-                    <span><small>Доступно в</small><br>Google Play</span>
-                </button>
-                <button class="store-btn" id="happAppStoreBtn">
-                    <i class="fab fa-apple"></i>
-                    <span><small>Загрузите в</small><br>App Store</span>
-                </button>
+                <button class="store-btn" id="happGooglePlayBtn"><i class="fab fa-google-play"></i><span><small>Доступно в</small><br>Google Play</span></button>
+                <button class="store-btn" id="happAppStoreBtn"><i class="fab fa-apple"></i><span><small>Загрузите в</small><br>App Store</span></button>
+                <button class="store-btn windows-btn" id="happWindowsBtn"><i class="fab fa-windows"></i><span><small>Скачать для</small><br>Windows</span></button>
             </div>
         </div>
+        <!-- V2Ray -->
         <div class="app-card">
             <h3>🚀 V2Ray VPN Client</h3>
             <p>Мощный VPN-клиент для обхода блокировок</p>
             <div class="store-buttons">
-                <button class="store-btn" id="v2rayGooglePlayBtn">
-                    <i class="fab fa-google-play"></i>
-                    <span><small>Доступно в</small><br>Google Play</span>
-                </button>
-                <button class="store-btn" id="v2rayAppStoreBtn">
-                    <i class="fab fa-apple"></i>
-                    <span><small>Загрузите в</small><br>App Store</span>
-                </button>
+                <button class="store-btn" id="v2rayGooglePlayBtn"><i class="fab fa-google-play"></i><span><small>Доступно в</small><br>Google Play</span></button>
+                <button class="store-btn" id="v2rayAppStoreBtn"><i class="fab fa-apple"></i><span><small>Загрузите в</small><br>App Store</span></button>
+                <button class="store-btn windows-btn" id="v2rayWindowsBtn"><i class="fab fa-windows"></i><span><small>Скачать для</small><br>Windows</span></button>
             </div>
         </div>
     </div>
 
     <!-- Возможности -->
-    <h2 class="section-title">Почему выбирают <span style="color: #ffffff;">NoTrace</span>?</h2>
+    <h2 class="section-title">Почему выбирают <span style="color: #fff;">NoTrace</span>?</h2>
     <div class="features-grid">
         <div class="feature-card"><div class="feature-icon"><i class="fas fa-skull-crossbones"></i></div><h3>Абсолютная анонимность</h3><p>Нет логов — нет проблем. Мы не храним ваши данные.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-bolt"></i></div><h3>Молниеносная скорость</h3><p>WireGuard® и 10 Гбит/с каналы. Смотреть 4K — реальность.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-mask"></i></div><h3>Stealth-режим</h3><p>Маскировка трафика под обычный HTTPS.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h3>Блокировка трекеров</h3><p>Защита от рекламы, майнеров и вредоносных сайтов.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>Все устройства</h3><p>Одна подписка — на несколько устройств.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-ruble-sign"></i></div><h3>Оплата рублями</h3><p>Только рубли. Без комиссий и скрытых платежей.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-power-off"></i></div><h3>Kill Switch</h3><p>Автоматическое отключение интернета при разрыве VPN.</p></div>
-        <div class="feature-card"><div class="feature-icon"><i class="fas fa-database"></i></div><h3>NoDNS Leaks</h3><p>Полная защита от утечек DNS.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-bolt"></i></div><h3>Молниеносная скорость</h3><p>WireGuard® и 10 Гбит/с каналы.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-mask"></i></div><h3>Stealth-режим</h3><p>Маскировка трафика под HTTPS.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h3>Блокировка трекеров</h3><p>Защита от рекламы и майнеров.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>Все устройства</h3><p>Одна подписка на всё.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-ruble-sign"></i></div><h3>Оплата рублями</h3><p>Без комиссий.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-power-off"></i></div><h3>Kill Switch</h3><p>Защита от утечек.</p></div>
+        <div class="feature-card"><div class="feature-icon"><i class="fas fa-database"></i></div><h3>NoDNS Leaks</h3><p>Полная защита DNS.</p></div>
     </div>
 
     <!-- Тарифы -->
-    <h2 class="section-title">Честные <span style="color: #ffffff;">цены</span></h2>
+    <h2 class="section-title">Честные <span style="color: #fff;">цены</span></h2>
     <div class="pricing-grid">
-        <div class="pricing-card">
-            <h3>Месяц</h3>
-            <div class="price">150₽ <span>/мес</span></div>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> 1 устройство</li>
-                <li><i class="fas fa-check"></i> Безлимитный трафик</li>
-                <li><i class="fas fa-check"></i> Все сервера</li>
-                <li><i class="fas fa-times"></i> Приоритетная поддержка</li>
-            </ul>
-            <div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div>
-        </div>
-        <div class="pricing-card popular">
-            <div class="popular-badge">🔥 САМЫЙ ПОПУЛЯРНЫЙ</div>
-            <h3>6 месяцев</h3>
-            <div class="price">130₽ <span>/мес</span></div>
-            <div class="save-badge">💡 Экономия 20₽ в месяц</div>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> 2 устройства</li>
-                <li><i class="fas fa-check"></i> Безлимитный трафик</li>
-                <li><i class="fas fa-check"></i> Все сервера + P2P</li>
-                <li><i class="fas fa-check"></i> Приоритетная поддержка 24/7</li>
-            </ul>
-            <div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div>
-        </div>
-        <div class="pricing-card">
-            <h3>12 месяцев</h3>
-            <div class="price">110₽ <span>/мес</span></div>
-            <div class="save-badge">🏆 Максимальная выгода</div>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> 3 устройства</li>
-                <li><i class="fas fa-check"></i> Безлимитный трафик</li>
-                <li><i class="fas fa-check"></i> Выделенный IP</li>
-                <li><i class="fas fa-check"></i> Бесплатный пробный день</li>
-                <li><i class="fas fa-check"></i> Команда экспертов 24/7</li>
-            </ul>
-            <div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div>
-        </div>
+        <div class="pricing-card"><h3>Месяц</h3><div class="price">150₽ <span>/мес</span></div><ul class="features-list"><li><i class="fas fa-check"></i> 1 устройство</li><li><i class="fas fa-check"></i> Безлимитный трафик</li><li><i class="fas fa-check"></i> Все сервера</li><li><i class="fas fa-times"></i> Приоритетная поддержка</li></ul><div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div></div>
+        <div class="pricing-card popular"><div class="popular-badge">🔥 САМЫЙ ПОПУЛЯРНЫЙ</div><h3>6 месяцев</h3><div class="price">130₽ <span>/мес</span></div><div class="save-badge">💡 Экономия 20₽ в месяц</div><ul class="features-list"><li><i class="fas fa-check"></i> 2 устройства</li><li><i class="fas fa-check"></i> Безлимитный трафик</li><li><i class="fas fa-check"></i> Все сервера + P2P</li><li><i class="fas fa-check"></i> Приоритетная поддержка 24/7</li></ul><div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div></div>
+        <div class="pricing-card"><h3>12 месяцев</h3><div class="price">110₽ <span>/мес</span></div><div class="save-badge">🏆 Максимальная выгода</div><ul class="features-list"><li><i class="fas fa-check"></i> 3 устройства</li><li><i class="fas fa-check"></i> Безлимитный трафик</li><li><i class="fas fa-check"></i> Выделенный IP</li><li><i class="fas fa-check"></i> Бесплатный пробный день</li><li><i class="fas fa-check"></i> Команда экспертов 24/7</li></ul><div class="payment-info"><i class="fas fa-robot"></i> Оплата через Telegram-бота</div></div>
     </div>
 
     <!-- Поддержка -->
-    <div class="support-block">
-        <h3>Поддержка <span style="color: #ffffff;">24/7</span></h3>
-        <p>Есть вопросы? Нужна помощь с подключением? Напиши нам — ответим в течение нескольких минут.</p>
-        <button class="support-button" id="supportTelegramBtn">
-            <i class="fab fa-telegram"></i> @No_TraceVPN
-        </button>
-    </div>
+    <div class="support-block"><h3>Поддержка <span style="color: #fff;">24/7</span></h3><p>Есть вопросы? Нужна помощь? Напиши нам — ответим быстро.</p><button class="support-button" id="supportTelegramBtn"><i class="fab fa-telegram"></i> @No_TraceVPN</button></div>
 
     <!-- CTA -->
-    <div class="cta-section">
-        <i class="fas fa-shield-alt" style="font-size: 48px; margin-bottom: 20px; color:#ffffff;"></i>
-        <h2>Твоя конфиденциальность под защитой</h2>
-        <p>Присоединяйся к 5000+ пользователей, которые уже выбрали NoTrace</p>
-    </div>
+    <div class="cta-section"><i class="fas fa-shield-alt" style="font-size: 48px; margin-bottom: 20px;"></i><h2>Твоя конфиденциальность под защитой</h2><p>Присоединяйся к 5000+ пользователей, которые уже выбрали NoTrace</p></div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 NoTrace VPN — Абсолютная анонимность. Никаких логов, никаких компромиссов.</p>
-    </footer>
+    <footer><p>© 2026 NoTrace VPN — Абсолютная анонимность. Никаких логов, никаких компромиссов.</p></footer>
 </div>
 
 <script>
-    // Кнопки для Happ
-    const happGooglePlayBtn = document.getElementById('happGooglePlayBtn');
-    const happAppStoreBtn = document.getElementById('happAppStoreBtn');
-    
-    // Кнопки для V2Ray
-    const v2rayGooglePlayBtn = document.getElementById('v2rayGooglePlayBtn');
-    const v2rayAppStoreBtn = document.getElementById('v2rayAppStoreBtn');
-    
-    // Кнопка бота и поддержки
+    // Happ
+    const happGooglePlay = document.getElementById('happGooglePlayBtn');
+    const happAppStore = document.getElementById('happAppStoreBtn');
+    const happWindows = document.getElementById('happWindowsBtn');
+    // V2Ray
+    const v2rayGooglePlay = document.getElementById('v2rayGooglePlayBtn');
+    const v2rayAppStore = document.getElementById('v2rayAppStoreBtn');
+    const v2rayWindows = document.getElementById('v2rayWindowsBtn');
+    // Telegram
     const botBtn = document.getElementById('botBtn');
-    const supportTelegramBtn = document.getElementById('supportTelegramBtn');
-    
-    // Ссылки Happ
-    const HAPP_GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.happproxy&pcampaignid=web_share';
-    const HAPP_APP_STORE_URL = 'https://apps.apple.com/au/app/happ-proxy-utility/id6504287215';
-    
-    // Ссылки V2Ray
-    const V2RAY_GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.v2raytun.android&pcampaignid=web_share';
-    const V2RAY_APP_STORE_URL = 'https://apps.apple.com/ru/app/v2ray-vpn-client/id6764586056';
-    
-    // Ссылка на бота и поддержку
+    const supportBtn = document.getElementById('supportTelegramBtn');
+
+    // Ссылки
+    const HAPP_GOOGLE = 'https://play.google.com/store/apps/details?id=com.happproxy&pcampaignid=web_share';
+    const HAPP_APPLE = 'https://apps.apple.com/au/app/happ-proxy-utility/id6504287215';
+    const HAPP_WINDOWS = 'https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe';
+    const V2RAY_GOOGLE = 'https://play.google.com/store/apps/details?id=com.v2raytun.android&pcampaignid=web_share';
+    const V2RAY_APPLE = 'https://apps.apple.com/ru/app/v2ray-vpn-client/id6764586056';
+    const V2RAY_WINDOWS = 'https://github.com/DigneZzZ/v2raytun/releases';
     const BOT_URL = 'https://t.me/NoTraceVPN_bot';
-    const SUPPORT_TELEGRAM = 'https://t.me/No_TraceVPN';
-    
-    function showToast(message, color) {
-        let toast = document.createElement('div');
-        toast.innerText = message;
-        toast.style.position = 'fixed';
-        toast.style.bottom = '30px';
-        toast.style.left = '50%';
-        toast.style.transform = 'translateX(-50%)';
-        toast.style.backgroundColor = color;
-        toast.style.color = 'white';
-        toast.style.padding = '12px 24px';
-        toast.style.borderRadius = '40px';
-        toast.style.fontWeight = '500';
-        toast.style.zIndex = '9999';
-        toast.style.backdropFilter = 'blur(8px)';
-        toast.style.fontFamily = "'Inter', sans-serif";
-        document.body.appendChild(toast);
-        setTimeout(() => { toast.remove(); }, 3000);
+    const SUPPORT_URL = 'https://t.me/No_TraceVPN';
+
+    function toast(msg) {
+        let t = document.createElement('div');
+        t.innerText = msg;
+        t.style.cssText = 'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#000;color:#fff;padding:12px 24px;border-radius:40px;font-weight:500;z-index:9999;font-family:Inter;white-space:nowrap;';
+        document.body.appendChild(t);
+        setTimeout(() => t.remove(), 2500);
     }
 
-    function openBot() {
-        window.open(BOT_URL, '_blank');
-        showToast('🤖 Открываем бота NoTraceVPN в Telegram', '#000000');
-    }
-
-    function openSupportTelegram() {
-        window.open(SUPPORT_TELEGRAM, '_blank');
-        showToast('💬 Открываем чат с поддержкой NoTrace', '#000000');
-    }
-
-    function openHappGooglePlay() {
-        window.open(HAPP_GOOGLE_PLAY_URL, '_blank');
-        showToast('📲 Открываем Google Play — скачивайте Happ', '#000000');
-    }
-
-    function openHappAppStore() {
-        window.open(HAPP_APP_STORE_URL, '_blank');
-        showToast('📱 Открываем App Store — скачивайте Happ', '#000000');
-    }
-
-    function openV2RayGooglePlay() {
-        window.open(V2RAY_GOOGLE_PLAY_URL, '_blank');
-        showToast('📲 Открываем Google Play — скачивайте V2Ray', '#000000');
-    }
-
-    function openV2RayAppStore() {
-        window.open(V2RAY_APP_STORE_URL, '_blank');
-        showToast('📱 Открываем App Store — скачивайте V2Ray', '#000000');
-    }
-
-    botBtn.addEventListener('click', openBot);
-    supportTelegramBtn.addEventListener('click', openSupportTelegram);
-    happGooglePlayBtn.addEventListener('click', openHappGooglePlay);
-    happAppStoreBtn.addEventListener('click', openHappAppStore);
-    v2rayGooglePlayBtn.addEventListener('click', openV2RayGooglePlay);
-    v2rayAppStoreBtn.addEventListener('click', openV2RayAppStore);
-
-    window.addEventListener('load', () => {
-        showToast('🛡️ NoTrace VPN — полная анонимность. Подписка через Telegram-бота', '#000000');
-    });
+    happGooglePlay.onclick = () => { window.open(HAPP_GOOGLE, '_blank'); toast('📲 Google Play — Happ'); };
+    happAppStore.onclick = () => { window.open(HAPP_APPLE, '_blank'); toast('📱 App Store — Happ'); };
+    happWindows.onclick = () => { window.open(HAPP_WINDOWS, '_blank'); toast('💻 Скачивание Happ для Windows...'); };
+    v2rayGooglePlay.onclick = () => { window.open(V2RAY_GOOGLE, '_blank'); toast('📲 Google Play — V2Ray'); };
+    v2rayAppStore.onclick = () => { window.open(V2RAY_APPLE, '_blank'); toast('📱 App Store — V2Ray'); };
+    v2rayWindows.onclick = () => { window.open(V2RAY_WINDOWS, '_blank'); toast('💻 Открываем GitHub — V2Ray для Windows'); };
+    botBtn.onclick = () => { window.open(BOT_URL, '_blank'); toast('🤖 Открываем бота @NoTraceVPN_bot'); };
+    supportBtn.onclick = () => { window.open(SUPPORT_URL, '_blank'); toast('💬 Чат поддержки @No_TraceVPN'); };
 </script>
 </body>
 </html>
