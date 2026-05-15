@@ -45,19 +45,12 @@
             letter-spacing: -0.5px;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: #ffffff;
+        /* Стиль для логотипа-картинки */
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-icon i {
-            color: #000000;
-            font-size: 22px;
         }
 
         /* Герой */
@@ -225,13 +218,6 @@
 
         .windows-btn:hover i {
             color: white;
-        }
-
-        .divider {
-            margin: 16px 0;
-            font-size: 12px;
-            color: #444;
-            position: relative;
         }
 
         /* Возможности */
@@ -431,7 +417,6 @@
             color: #888;
         }
 
-        /* Footer */
         footer {
             border-top: 1px solid #1a1a1a;
             padding: 40px 0;
@@ -464,7 +449,7 @@
 <div class="container">
     <nav class="navbar">
         <div class="logo">
-            <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+            <img src="https://i.ibb.co/bMZc19d1/image.jpg" alt="NoTraceVPN Logo" class="logo-img">
             <span>NoTraceVPN</span>
         </div>
     </nav>
@@ -484,9 +469,8 @@
         <button class="bot-username" id="botBtn"><i class="fab fa-telegram"></i> @NoTraceVPN_bot</button>
     </div>
 
-    <!-- Приложения с Windows-кнопками -->
+    <!-- Приложения -->
     <div class="apps-section">
-        <!-- Happ -->
         <div class="app-card">
             <h3>📱 Happ</h3>
             <p>Быстрый, безопасный и простой в использовании</p>
@@ -496,7 +480,6 @@
                 <button class="store-btn windows-btn" id="happWindowsBtn"><i class="fab fa-windows"></i><span><small>Скачать для</small><br>Windows</span></button>
             </div>
         </div>
-        <!-- V2Ray -->
         <div class="app-card">
             <h3>🚀 V2Ray VPN Client</h3>
             <p>Мощный VPN-клиент для обхода блокировок</p>
