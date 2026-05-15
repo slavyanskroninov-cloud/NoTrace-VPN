@@ -456,7 +456,7 @@
         <div class="bot-icon"><i class="fab fa-telegram-plane"></i></div>
         <h2>NoTraceVPN</h2>
         <p>Быстрый, безопасный и 100% анонимный VPN в твоем Телеграм</p>
-        <button class="bot-username" id="botBtn"><i class="fab fa-telegram"></i> @NoTraceVPN_bot</button>
+        <button class="bot-username" id="channelBtn"><i class="fab fa-telegram"></i> Перейти в Telegram-канал</button>
     </div>
 
     <div class="apps-section">
@@ -551,22 +551,30 @@
 </div>
 
 <script>
+    // Кнопка на Telegram-канал (исправлено)
+    const channelBtn = document.getElementById('channelBtn');
+    
+    // Кнопки для Happ
     const happGooglePlay = document.getElementById('happGooglePlayBtn');
     const happAppStore = document.getElementById('happAppStoreBtn');
     const happWindows = document.getElementById('happWindowsBtn');
+    
+    // Кнопки для V2Ray
     const v2rayGooglePlay = document.getElementById('v2rayGooglePlayBtn');
     const v2rayAppStore = document.getElementById('v2rayAppStoreBtn');
     const v2rayWindows = document.getElementById('v2rayWindowsBtn');
-    const botBtn = document.getElementById('botBtn');
+    
+    // Кнопка поддержки
     const supportBtn = document.getElementById('supportTelegramBtn');
 
+    // Ссылки
+    const CHANNEL_URL = 'https://t.me/+JS7jKW-NKSVhYTBi';
     const HAPP_GOOGLE = 'https://play.google.com/store/apps/details?id=com.happproxy&pcampaignid=web_share';
     const HAPP_APPLE = 'https://apps.apple.com/au/app/happ-proxy-utility/id6504287215';
     const HAPP_WINDOWS = 'https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe';
     const V2RAY_GOOGLE = 'https://play.google.com/store/apps/details?id=com.v2raytun.android&pcampaignid=web_share';
     const V2RAY_APPLE = 'https://apps.apple.com/ru/app/v2ray-vpn-client/id6764586056';
     const V2RAY_WINDOWS = 'https://github.com/DigneZzZ/v2raytun/releases';
-    const BOT_URL = 'https://t.me/NoTraceVPN_bot';
     const SUPPORT_URL = 'https://t.me/No_TraceVPN';
 
     function toast(msg) {
@@ -577,13 +585,13 @@
         setTimeout(() => t.remove(), 2500);
     }
 
+    channelBtn.onclick = () => { window.open(CHANNEL_URL, '_blank'); toast('📢 Открываем Telegram-канал NoTrace'); };
     happGooglePlay.onclick = () => { window.open(HAPP_GOOGLE, '_blank'); toast('📲 Google Play — Happ'); };
     happAppStore.onclick = () => { window.open(HAPP_APPLE, '_blank'); toast('📱 App Store — Happ'); };
     happWindows.onclick = () => { window.open(HAPP_WINDOWS, '_blank'); toast('💻 Скачивание Happ для Windows...'); };
     v2rayGooglePlay.onclick = () => { window.open(V2RAY_GOOGLE, '_blank'); toast('📲 Google Play — V2Ray'); };
     v2rayAppStore.onclick = () => { window.open(V2RAY_APPLE, '_blank'); toast('📱 App Store — V2Ray'); };
     v2rayWindows.onclick = () => { window.open(V2RAY_WINDOWS, '_blank'); toast('💻 Открываем GitHub — V2Ray для Windows'); };
-    botBtn.onclick = () => { window.open(BOT_URL, '_blank'); toast('🤖 Открываем бота @NoTraceVPN_bot'); };
     supportBtn.onclick = () => { window.open(SUPPORT_URL, '_blank'); toast('💬 Чат поддержки @No_TraceVPN'); };
 </script>
 </body>
